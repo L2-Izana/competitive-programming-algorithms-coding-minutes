@@ -1,0 +1,24 @@
+{
+    "C++ Template": {
+        "prefix": "cppTemplate", // Trigger to use the snippet
+        "body": [
+            "#include <bits/stdc++.h> // include all standard libraries",
+            "#define ll long long int // macro definition",
+            "#define F first",
+            "#define S second",
+            "#define pb push_back",
+            "using namespace std;",
+            "",
+            "int main()",
+            "{",
+            "#ifndef ONLINE_JUDGE",
+            "    freopen(\"input.txt\", \"r\", stdin);",
+            "    freopen(\"output.txt\", \"w\", stdout);",
+            "#endif",
+            "",
+            "    return 0;",
+            "}"
+        ],
+        "description": "C++ template with standard libraries and macro definitions"
+    }
+}
