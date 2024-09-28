@@ -1,38 +1,18 @@
-// #include <bits/stdc++.h>
-// using namespace std;
-
-// int firstUniqChar(string s)
-// {
-//     map<char, int> mp;
-//     for (int i = 0; i < s.size(); i++)
-//     {
-//         char c = s[i];
-//         if (mp.find(c) != mp.end())
-//         {
-//             mp.erase(c);
-//         }
-//         else
-//         {
-//             mp[c] = i;
-//         }
-//     }
-//     if (!mp.empty())
-//     {
-//         return mp.begin()->second;
-//     }
-//     return -1;
-// }
-
-// int main()
-// {
-//     cout << firstUniqChar("hello");
-//     return 0;
-// }
-
 #include <iostream>
 #include <unordered_map>
 #include <string>
 using namespace std;
+
+/**
+ * @brief Finds the index of the first non-repeating character in a given string.
+ *
+ * This function iterates through the string to count the occurrences of each character
+ * and then finds the first character that appears only once. If no such character exists,
+ * it returns -1.
+ *
+ * @param s The input string to be analyzed.
+ * @return int The index of the first non-repeating character, or -1 if none exists.
+ */
 
 int firstUniqChar(string s)
 {
